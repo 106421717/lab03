@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="CWA Helpdesk Appointment" />
+  <meta name="keywords" content="HTML, Form, tags" />
+  <meta name="author" content="A Lecturer"  />
+  <title>Helpdesk Contact Form</title>
+</head>
+
+<body>
+  <img src="logo.png" alt="Swinburne Logo" width="100" height="50"/>
+  <h1>CWA Helpdesk Appointment</h1>
+  <p>The helpdesk is located in ATC620. Open 10:30 to 19:00 Monday to Friday.</p>
+  <p>Check Blackboard for when CWA tutors will be there.</p>
+
+  <form>
+    <fieldset>
+      <legend>Student Details</legend>
+      <label for="studentID" pattern="{7-10}">Student ID:</label>
+      <input type="text" id="studentID" name="studentID" required />
+      <br>
+      <label for="givenname">Given Name:</label>
+      <input type="text" id="givenname" name="givenname" pattern="{a-zA-Z}" required /> 
+      <label for="familyname" text-align="right">Family Name:</label> 
+      <input type="text" id="familyname" name="familyname" pattern="{a-zA-Z}" required />
+    </fieldset>
+
+    <fieldset>
+      <legend>Your Unit</legend>
+      <form>
+        <input type="radio" id="COS10011" name="unit" value="COS10011" required />
+        <label for="cos10011" >COS10011</label><br>
+        <input type="radio" id="COS60004" name="unit" value="COS60004" />
+        <label for="cos10011" >COS60004</label><br>
+        <input type="radio" id="COS60007" name="unit" value="COS60007" />
+        <label for="cos10011" >COS60007</label><br>
+      </form>
+
+
+      <label for="tutor">Your Tutor:</label>
+      <select id="tutor" name="tutor">
+        <option value=""
+      </select>
+    </fieldset>
+  </form>
+
+  
+
+
+</body>
+
+</html>
