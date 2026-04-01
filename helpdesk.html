@@ -14,7 +14,7 @@
   <p>The helpdesk is located in ATC620. Open 10:30 to 19:00 Monday to Friday.</p>
   <p>Check Blackboard for when CWA tutors will be there.</p>
 
-  <form>
+  <form method="post" action="action.php">
     <fieldset>
       <legend>Student Details</legend>
       <label for="studentID" pattern="{7-10}">Student ID:</label>
@@ -37,16 +37,51 @@
         <label for="cos10011" >COS60007</label><br>
       </form>
 
+      <br>
 
       <label for="tutor">Your Tutor:</label>
       <select id="tutor" name="tutor">
-        <option value=""
+        <option value="">Please select</option>
       </select>
     </fieldset>
+
+    <fieldset>
+      <legend>Issue</legend>
+      <form>
+        <label for="html">HTML</label>
+        <input type="checkbox" id="html" name="html" value="html" checked>
+        <label for="css">CSS</label>
+        <input type="checkbox" id="css" name="css" value="css">
+        <label for="javascript">JavaScript</label>
+        <input type="checkbox" id="javascript" name="javascript" value="javascript">
+        <label for="php">PHP</label>
+        <input type="checkbox" id="php" name="php" value="php">
+        <label for="mysql">MYSQL</label>
+        <input type="checkbox" id="mysql" name="mysql" value="mysql">
+      </form>
+
+      <br>
+
+      <label for="issue">Description of Issue</label>
+      <br>
+      <textarea id="issue" name="issue" rows="4" cols="30" placeholder="Write description of your problem here...."></textarea>
+    </fieldset>
+
+    <fieldset>
+      <legend>Preferred Date/Time</legend>
+      <label for="date">Date</label>
+      <input type="date"> </input>
+      <label for="time">Time</label>
+      <input type="time"> </input>
+    </fieldset>
+
+
+    <input type= "submit" value="Book"/>
+	  <input type= "reset" value="Reset Form"/>
+
   </form>
 
   
-
 
 </body>
 
